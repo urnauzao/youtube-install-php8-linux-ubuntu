@@ -25,25 +25,25 @@ In this repository, I show step by step the installation of PHP 8 in linux envir
 > sudo apt search php8.0-* 
 
 
-<strong>Exemplo com varias extensões diponíveis:</strong> bz2, curl, ffi, ftp, fileinfo, gd, gettext, gmp, intl, imap, ldap, mbstring, exif, mysqli, odbc, openssl, pdo_firebird, pdo_mysql, pdo_oci, pdo_odbc, pdo_pgsql, pdo_sqlite, pgsql, shmop, snmp, soap, sockets, sodium, sqlite3, tidy, xsl 
+<strong>Exemplo com varias extensões diponíveis:</strong> bz2, curl, ffi, ftp, fileinfo, gd, gettext, gmp, intl, imap, ldap, mbstring, exif, mysqli, odbc, openssl, pdo_firebird, pdo_mysql, pdo_oci, pdo_odbc, pdo_pgsql, pdo_sqlite, pgsql, shmop, snmp, soap, sockets, sodium, sqlite3, tidy, xsl, zip, etc... 
     
 - Vamos instalar as extensões mais comuns de serem utilizadas, através do comando abaixo:
-> sudo apt install php-8.0-curl php-8.0-fileinfo php8.0-gd php8.0-mbstring php8.0-exif
+> sudo apt install php-curl php-fileinfo php-gd php-mbstring php-exif
 
 - Habilitar Mysql(8.0^)
-> sudo apt install php-8.0-mysqli php-8.0-pdo_mysql
+> sudo apt install php-mysqli php-pdo_mysql
 
 - Habilitar Postgresql
-> sudo apt install php-8.0-pgsql php-8.0-pdo_pgsql
+> sudo apt install php-pgsql php-pdo_pgsql
 
 - Habilitar Sqlite
-> sudo apt install php-8.0-sqlite3 php-8.0-pdo_sqlite
+> sudo apt install php-sqlite3 php-pdo_sqlite
 
 - Habilitar Microsoft SQL Server
-> sudo apt install php-8.0-odbc php-8.0-pdo_odbc
+> sudo apt install php-odbc php-pdo_odbc
 
 - Habilitar Oracle DB
-> sudo apt install php-8.0-oci8_12c php-8.0-oci8_19 php-8.0-pdo_oci
+> sudo apt install php-oci8_12c php-oci8_19 php-pdo_oci
 
 ## Onde encontrar outras extensões
 Se você precisa de extensões como o Xdebug, Php Redis, Kafka Client, ou outra, então recomendo realizar a instalação do `PHP-PEAR`, com o comando abaixo e visite os sites de repositórios de extensões que vos apresento mais abaixo:
@@ -71,8 +71,10 @@ Para visualizar seus `alias` execute:
 > alias
 
 Para definir um alias para o PHP execute algo como o exemplo:
-> alias php="/usr/local/php8/bin/php"
-É importante que você se certifique-se que este é o diretório de sua instalação do PHP. 
+> alias meu_php="/usr/bin/php"
+ 
+É importante que você se certifique-se que este é o diretório de sua instalação do PHP.
+A partir desse momento ao chamar o alias `meu_php` será chamado a execução do cliente do PHP.
 
 # EXTRA
 
